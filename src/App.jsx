@@ -1,10 +1,18 @@
 import './App.css'
+import { BrowserRouter, Routes, Route, Link, Navigate } from "react-router-dom";
+import Home from './components/Home';
+import History from './components/History'
 
 function App() {
 
   return (
     <>
-     <h1>XProductRecommendation</h1>
+     <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/history' element={<History/>}/>
+        </Routes>
+     </BrowserRouter>
     </>
   )
 }
