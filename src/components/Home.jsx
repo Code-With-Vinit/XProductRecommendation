@@ -1,22 +1,25 @@
-import React from 'react'
+import React,{useState} from 'react'
 import BotLogo from '../assets/Bot_logo.png'
+import Sidebar from '../components/Sidebar/Sidebar'
+
 import './Home.css'
 
 function Home() {
+  // const [isOpen,setIsOpen] = useState(false);
+
+
   return (
 
     <div className='layout'>
 
-    <div className='sidebar'>
-
-    </div>
+    <Sidebar/>
 
     <div className='container'>
       <header>
         <h1>Product Recommendation AI</h1>
         <div>
           <span>Light</span>
-          <img src="" alt="" />
+          {/* <img src="" alt="" /> */}
         </div>
       </header>
 

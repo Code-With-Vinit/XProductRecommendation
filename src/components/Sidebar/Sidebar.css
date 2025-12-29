@@ -1,0 +1,42 @@
+.sidebar {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sideBar-left{
+    display: flex;
+    width: 50%;
+    gap: 10px;
+    font-weight: 600;
+}
+.sideBar-top{
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    background: linear-gradient(
+    to bottom,
+    #D7C7F4 0%,
+    #D7C7F4 100%,
+    transparent 25%,
+    transparent 100%
+  ); 
+  padding: 20px;
+  margin-bottom: 50px;
+}
+.suggestion{
+    background-color: #D7C7F4;
+    width: 80%;
+    border-radius: 6px;
+    font-weight: 600;
+    padding: 10px;
+}
+.BotHeader{
+    height: 50px;
+    width: 50px;
+}
+.edit{
+    height: 30px;
+    width: 30px;
+}

@@ -3,9 +3,7 @@
   height: 100vh;
   display: flex;
 }
-.sidebar {
-  width: 20%;
-}
+
 .container {
   background: linear-gradient(
     180deg,
@@ -52,6 +50,9 @@ h1 {
   height: 65px;
   width: 65px;
 }
+
+
+
 .Input{
     display: flex;
     gap: 20px;
