@@ -5,7 +5,7 @@ import './Sidebar.css'
 
 function Sidebar() {
   return (
-        <div className='sidebar'>
+        <aside className='sidebar'>
 
           <div className='sideBar-top'>
               <div className='sideBar-left'>
@@ -20,7 +20,7 @@ function Sidebar() {
 
         <button className='suggestion'>Previous Suggestions</button>
         
-    </div>
+      </aside>
   )
 }
 

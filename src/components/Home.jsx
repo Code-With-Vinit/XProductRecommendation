@@ -1,19 +1,31 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import BotLogo from '../assets/Bot_logo.png'
 import Sidebar from '../components/Sidebar/Sidebar'
 
 import './Home.css'
 
 function Home() {
-  // const [isOpen,setIsOpen] = useState(false);
+  const [isOpen,setIsOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 800);
+
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 800);
+      if (window.innerWidth >= 800) {
+        setIsOpen(false); // reset sidebar state
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
 
   return (
 
     <div className='layout'>
-
     <Sidebar/>
-
     <div className='container'>
       <header>
         <h1>Product Recommendation AI</h1>

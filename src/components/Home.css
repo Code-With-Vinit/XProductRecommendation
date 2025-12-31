@@ -72,3 +72,16 @@ h1 {
     border-radius: 6px;
     font-weight: 600;
 }
+
+
+@media(max-width:800px){
+  .container {
+  background: linear-gradient(
+    180deg,
+    rgba(215, 199, 244, 0.2) 0%,
+    rgba(151, 133, 186, 0.2) 100%
+  );
+  width: 100%;
+  padding: 20px;
+}
+}
