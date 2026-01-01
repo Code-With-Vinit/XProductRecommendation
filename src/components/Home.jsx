@@ -25,6 +25,7 @@ function Home() {
   return (
 
     <div className='layout'>
+      console.log("Checking");
     <Sidebar/>
     <div className='container'>
       <header>
