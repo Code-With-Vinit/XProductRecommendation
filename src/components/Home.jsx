@@ -26,6 +26,7 @@ function Home() {
 
     <div className='layout'>
     <Sidebar/>
+    console.log("Checking");
     <div className='container'>
       <header>
         <h1>Product Recommendation AI</h1>
