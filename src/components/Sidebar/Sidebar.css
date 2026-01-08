@@ -7,7 +7,6 @@
 
 .sideBar-left{
     display: flex;
-    flex-wrap: wrap;
     width: 50%;
     gap: 10px;
     font-weight: 600;

@@ -1,38 +1,30 @@
-import React,{useState,useEffect} from 'react'
+// import React,{useState,useEffect} from 'react'
 import BotLogo from '../assets/Bot_logo.png'
 import Sidebar from '../components/Sidebar/Sidebar'
-
+import { useTheme } from '../context/themeContext'
 import './Home.css'
 
 function Home() {
-  const [isOpen,setIsOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 800);
-
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 800);
-      if (window.innerWidth >= 800) {
-        setIsOpen(false); // reset sidebar state
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
+  
+  const {theme,toggleTheme}=useTheme();
 
   return (
 
-    <div className='layout'>
+    <div className="layout">
     <Sidebar/>
-    console.log("Checking");
     <div className='container'>
       <header>
         <h1>Product Recommendation AI</h1>
-        <div>
-          <span>Light</span>
-          {/* <img src="" alt="" /> */}
+        <div className='mode-switch'>
+          <span>{theme==="dark"? "Dark":"Light"}</span>
+          <label htmlFor="theme-toggle">
+            <input
+            id="theme-toggle" 
+            type="checkbox"
+            onChange={toggleTheme}
+            checked={theme==="dark"} />
+            <span className='slider'></span>
+          </label>
         </div>
       </header>
 
