@@ -2,6 +2,7 @@
 import BotLogo from '../assets/Bot_logo.png'
 import Sidebar from '../components/Sidebar/Sidebar'
 import { useTheme } from '../context/themeContext'
+import OptionCard from './OptionCard/OptionCard'
 import './Home.css'
 
 function Home() {
@@ -34,25 +35,13 @@ function Home() {
       </div>
 
       <div className='OptionGrid'>
-        <div className='OptionCard'>
-          <h1>Jeans</h1>
-          <p>Get immediate AI generated response</p>
-        </div>
+        <OptionCard product="Jeans"/>
 
-        <div className='OptionCard'>
-          <h1>SmartPhone</h1>
-          <p>Get immediate AI generated response</p>
-        </div>
+        <OptionCard product="SmartPhone"/>
 
-        <div className='OptionCard'>
-          <h1>Laptop</h1>
-          <p>Get immediate AI generated response</p>
-        </div>
+        <OptionCard product="Laptop"/>
 
-        <div className='OptionCard'>
-          <h1>T-Shirt</h1>
-          <p>Get immediate AI generated response</p>
-        </div>
+        <OptionCard product="T-Shirt"/>
       </div>
 
       <div className='Input'>

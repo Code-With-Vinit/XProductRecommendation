@@ -1,0 +1,21 @@
+.OptionCard {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.OptionCard img {
+  height: 30px;
+  width: 30px;
+  opacity: 0;
+  transform: translateX(-5px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.OptionCard:hover img {
+  opacity: 1;
+  transform: translateX(0);
+}
