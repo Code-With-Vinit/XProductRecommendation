@@ -36,7 +36,7 @@ function Home() {
 
       <div className='OptionGrid'>
         <OptionCard product="Jeans"/>
-
+          console.log("debugging");
         <OptionCard product="SmartPhone"/>
 
         <OptionCard product="Laptop"/>
