@@ -13,6 +13,7 @@ function Home() {
 
     <div className="layout">
     <Sidebar/>
+    console.log("Debugging");
     <div className='container'>
       <header>
         <h1>Product Recommendation AI</h1>
