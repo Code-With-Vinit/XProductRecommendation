@@ -17,7 +17,6 @@ function Home() {
       <header>
         <h1>Product Recommendation AI</h1>
         <div className='mode-switch'>
-          console.log("debugging");
           <span>{theme==="dark"? "Dark":"Light"}</span>
           <label htmlFor="theme-toggle">
             <input
